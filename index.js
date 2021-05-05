@@ -50,7 +50,7 @@ app.get('/',function (req,res) {
         for(var a in json ){
                 key.push(a);  
         }
-        res.send(key.toString());
+        res.json(key.toString());
     });
 })
 
