@@ -13,7 +13,7 @@ const client = new Client({
 client.connect();
 
 const cors=require('cors')
-app.use(cors({origin:'*'}))
+app.use(cors())
 
 const PORT=process.env.PORT||5000;
 app.use(bodyParser.urlencoded({extended: false}));
