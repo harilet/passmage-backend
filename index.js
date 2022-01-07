@@ -11,7 +11,7 @@ setInterval(function(){
 },1000*60*30)
 
 const client = new Client({
-    connectionString: /* process.env.DATABASE_URL| */'postgres://uasgejbsfogjsc:59edaf0d2da717fbdd8ae7c331760a3d0c10e51c9357030acf72d6503357663b@ec2-63-33-14-215.eu-west-1.compute.amazonaws.com:5432/d1l4mhpmia807u',
+    connectionString: process.env.DATABASE_URL,
     ssl: {
       rejectUnauthorized: false
     }
